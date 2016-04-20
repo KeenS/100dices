@@ -35,7 +35,7 @@ fn main() {
                                 let eye = rng.gen::<usize>() % 6;
                                 if eye != base {
                                     *elm = i;
-                                    break 'v;
+                                    continue 'v;
                                 }
                             }
                             *elm = NUM_SAME;
